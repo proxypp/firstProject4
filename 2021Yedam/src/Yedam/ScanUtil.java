@@ -6,13 +6,12 @@ public class ScanUtil {
 	static Scanner scn = new Scanner(System.in);
 	public static int readInt(String msg) {
 		System.out.println(msg);
-		return scn.nextInt();
+		int num = scn.nextInt();
+		scn.nextLine();
+		return num;
 		
 	}
 	public static String readStr(String msg) {
-		if (scn.hasNextLine()) {
-			scn.nextLine();
-		}
 		System.out.println(msg);
 		return scn.nextLine();
 	}
